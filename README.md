@@ -5,6 +5,8 @@ An AI-assisted Security Operations Center (SOC) triage lab: a **Python/TShark ne
 The focus is on making the AI **trustworthy**: deterministic scoring done in code (not by the model), strict input validation, credential redaction, an output review gate that rejects hallucinated or unsupported claims, and mandatory human review.
 
 > **Status:** Phases 1–2 complete ✅ · Phase 3 (controlled Kali traffic) next
+>
+> **Related project:** [Wazuh SOC Lab](https://github.com/k-Darshan-chowdary/Wazuh-SOC-LAB) — the SIEM and detection-engineering side of the same home lab (Wazuh, Sysmon, custom rules, MITRE mapping).
 
 ---
 
@@ -69,6 +71,14 @@ docs/_phase-template.md  template for documenting the next phases
 ## Credits
 
 The lab concept (sensor → JSON alert → AI triage agent) was inspired by the *"Easy Cybersecurity Home Lab using Python, Virtual Machines and AI"* tutorial by Royden Rebello (The Social Dork), which used Airia. This project re-implements it with Langflow and NVIDIA, adds the validation, scoring, grounding and testing layers, and does not redistribute the tutorial's materials.
+
+## Skills demonstrated
+
+Python · Langflow workflow design · integrating an NVIDIA-hosted LLM · **AI guardrails** (input validation, credential redaction, output verification/grounding, prompt-injection testing) · deterministic risk scoring · MITRE ATT&CK mapping · TShark/network sensing · automated testing (68 offline + 14 live cases) · secure handling of untrusted input.
+
+## License
+
+Released under the [MIT License](LICENSE). Third-party tutorial materials noted under Credits are excluded and not redistributed.
 
 ---
 
