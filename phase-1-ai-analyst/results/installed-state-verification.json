@@ -1,0 +1,18 @@
+{
+  "flow_id": "4b83ff2d-9c26-4152-b46b-c3dbb46502b8",
+  "flow_name": "SOC AI Analyst",
+  "checks": {
+    "soc_input_validation.py": true,
+    "soc_output_review_gate.py": true,
+    "soc_agent_guard.py": true,
+    "playbook_unchanged": true,
+    "model_unchanged": true,
+    "wiring_unchanged": true
+  },
+  "playbook_sha256": "ec40a8087ef68921057a909bd81be07fd918cc1096a41303717079501822cadb",
+  "component_sha256": {
+    "soc_input_validation.py": "39da07d47532173937ec356803353c83bb93f98fb68252c2b8e76b3218549c74",
+    "soc_output_review_gate.py": "acbeaaebf4e8b38163b5a4fcc396d5a7d4ba5bdce5a0b1caff5ecb124b20c069",
+    "soc_agent_guard.py": "a9c5c164d73f9d94c661345f053f63264ede6fa69725318af2cc8f932388e83f"
+  }
+}

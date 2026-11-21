@@ -1,0 +1,9 @@
+{
+  "tests_run": 68,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "scope": "Offline policy and component-interface tests; NVIDIA verification is separate",
+  "failure_details": []
+}

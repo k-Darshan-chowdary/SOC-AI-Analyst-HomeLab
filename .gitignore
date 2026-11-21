@@ -1,0 +1,28 @@
+# secrets
+.env
+.env.*
+*.key
+*.pem
+*credentials*
+
+# python
+__pycache__/
+*.py[cod]
+
+# raw capture data and private evidence
+*.pcap
+*.pcapng
+runs/
+guest-runs-*/
+reference/
+work/
+backup-before-validator-repair/
+live-events-*.json
+live-job-*.json
+
+# VM / OS files
+*.vmdk
+*.vmx
+*.iso
+Thumbs.db
+desktop.ini

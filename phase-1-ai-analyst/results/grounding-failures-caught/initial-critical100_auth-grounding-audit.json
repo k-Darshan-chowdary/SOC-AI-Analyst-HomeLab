@@ -1,0 +1,2848 @@
+{
+  "case": "critical100_auth",
+  "job_id": "3c2a5c3f-cf67-44fa-b01e-8e8ff8165948",
+  "completed": true,
+  "passed": false,
+  "duration_seconds": 227.087,
+  "expected_status": "ok",
+  "expected_score": 100,
+  "final_report": null,
+  "observed_reports": [
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "The alert reports 101 ICMP packets over a 60\u2011second window, yielding 1.68 pps. The documented flood threshold for this indicator is 1 packet per second, so the traffic exceeds that threshold, indicating ICMP flood\u2011like activity.\n\nTwo distinct events (r1 and r2) are only 30 seconds apart, satisfying the repeated activity criterion. A service context entry indicates the target is SSH management and is marked privileged, satisfying the privileged service criterion.\n\nAdditionally, two authentication failures were observed against SSH for account \"lab-user\", satisfying the authentication activity criterion.\n\nAll five risk scoring components are supported by the supplied telemetry, leading to a maximal risk score of 100.\n\nThe classification of \"Brute Force Attempt\" is driven solely by the repeated authentication failures and the presence of a privileged target, even though the packet count relates to ICMP traffic. The alert does not confirm successful compromise; it only indicates suspicious activity warranting further investigation.\n\nGiven the lack of asset inventory, provenance confirmation, and broader context, confidence remains low.\n\nNo evidence was provided to confirm legitimate lab testing or retries; thus those possibilities remain plausible.\n\nThe alert lacks any indication that the traffic caused service disruption or network denial of service.\n\nAll conclusions are based directly on the supplied telemetry and remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics or retry attempts may generate ICMP traffic and authentication failures; confirming the activity as authorized or unintentional would reduce suspicion."
+      ],
+      "missing_evidence": [
+        "No evidence of source or destination ownership or explicit authorization status.\nNo logs or context confirming the intrusion attempt was genuinely malicious versus a permitted test.\nNo additional telemetry confirming if the traffic caused any impact on targeted services."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires prompt Tier 2 review; verify evidence and investigate potential compromise",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P2",
+          "action": "Review authentication logs for related failed logins, account lockout events, or related accounts",
+          "reason": "Corroborate repeated authentication failures and assess if broader brute force activity exists",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P2",
+          "action": "Examine network packet captures for sent vs received ICMP packets to assess whether the ICMP flood was symptomatic of a misconfigured appliance or intentional denial",
+          "reason": "Determine if ICMP traffic is a diagnostic probe or an attempted denial-of-service",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P3",
+          "action": "Validate asset ownership and test status for IP\u00a0192.0.2.10 and SSH service",
+          "reason": "Confirm or rule out authorized internal testing",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "The alert indicates a high\u2011risk burst of ICMP traffic and failed SSH login attempts to a privileged SSH service. While the activity is suspicious and warrants escalation to Tier\u00a02 for thorough investigation, it does not constitute confirmed compromise or denial of service."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Medium",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Observed facts: 101 ICMP packets within a 60\u2011second window, yielding 1.68 packets per second. Two distinct events (r1 and r2) were recorded 30 seconds apart, indicating repeated activity. The service_context indicates the target was an SSH management service marked as privileged, and the documented_flood_threshold shows a threshold of 1 packet per second, which was exceeded. Additionally, two authentication_events with failure outcomes were recorded for account \u2018lab\u2011user\u2019. Calculated metrics confirm the packet rate and volume thresholds used for scoring. Hypotheses: the combination of high packet volume, repeated events, privileged service targeting, flood\u2011like ICMP behavior, and authentication failures is consistent with a brute\u2011force attack directed at an SSH service. Unknowns remain regarding the legitimacy of the source IP 192.0.2.10, whether the traffic is part of authorized testing, or if there is a known baseline of normal ICMP traffic for this host. Therefore, the evidence supports a Brute Force Attempt classification with a risk score of 100, but the confidence is medium due to the lack of independent verification of source authenticity and authorization context.",
+      "false_positive_considerations": [
+        "The source IP is a reserved test address (192.0.2.10); internal scanning or laboratory testing could explain elevated ICMP traffic and repeated authentication attempts.",
+        "No explicit documentation of authorized vulnerability scanning or penetration testing activity accompanies the alert, leaving uncertainty about the legitimacy of the traffic.",
+        "High packet volume alone does not prove malicious intent; legitimate maintenance or backup operations could generate similar patterns."
+      ],
+      "missing_evidence": [
+        "Independent confirmation that the source IP is not a benign or internal test host.",
+        "Explicit evidence of authorization or policy exemption for the observed traffic.",
+        "Historical baseline metrics for normal ICMP traffic and authentication failures on the target service."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately for detailed investigation.",
+          "reason": "Risk score of 100 requires urgent Tier 2 review to confirm threat and authority.",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P2",
+          "action": "Review packet capture summaries and authentication logs for this IP and service period.",
+          "reason": "Detailed logs may reveal whether the traffic is part of scheduled scans or legitimate testing.",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P3",
+          "action": "Monitor for recurrence of ICMP bursts and authentication failures from 192.0.2.10.",
+          "reason": "Continued observation will help determine if the activity is anomalous or routine.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Alert shows elevated ICMP traffic with repeated authentication failures to a privileged SSH service, meeting criteria for a critical risk score. The source IP is a test address, and no explicit authorization has been confirmed, creating uncertainty about intent. Immediate Tier 2 investigation is advised to validate the threat and ensure operational context."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Observations: The alert reports 101 ICMP packets in a 60\u2011second window originating from indicator 192.0.2.10. Packet rate is 1.68 packets/s. Two distinct repeat events r1 and r2 occurred 30 seconds apart. Service context indicates the indicator targeted a privileged SSH management service. Two authentication failure events for account 'lab-user' were recorded for SSH authentication attempts. Calculated metrics: 101 packets give a \u2018packet_volume\u2019 score of +40; 30\u2011second interval between repeat events satisfies the \u2018repeated_activity\u2019 condition adding +20; privilege service targeting adds +20; documented ICMP flood threshold of 1 packet/s is exceeded, adding +15; authentication failures add +25. Total risk score 100, classed as \u2018Critical\u2019. Hypotheses: The volume spike combined with repeated authentication failures and privileged SSH access is consistent with a possible brute\u2011force attack (MITRE T1110). The ICMP traffic could be a side effect or a separate activity; the documented excess over the flood threshold suggests a flooding pattern. Unknowns: No source_ip is supplied, so it is impossible to confirm whether the originating traffic is indeed from 192.0.2.10. There is no evidence of a legitimate test or health\u2011check context, nor is there a known history of similar traffic. The authentication failures could be legitimate account lockouts or a scripted context. Conclusion: The available evidence supports a Brute Force Attempt classification but confidence remains low due to lack of context on source legitimacy and authentication intent.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Risk score 100 requires immediate tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P2",
+          "action": "Collect detailed authentication logs for account 'lab-user' and verify legitimacy of failures",
+          "reason": "Authentication failures may indicate brute force; need confirmation of semantics.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "The alert reports 101 ICMP packets over a 60\u2011second window, yielding 1.68 pps. The documented flood threshold for this indicator is 1 packet per second, so the traffic exceeds that threshold, indicating ICMP flood\u2011like activity.\n\nTwo distinct events (r1 and r2) are only 30 seconds apart, satisfying the repeated activity criterion. A service context entry indicates the target is SSH management and is marked privileged, satisfying the privileged service criterion.\n\nAdditionally, two authentication failures were observed against SSH for account \"lab-user\", satisfying the authentication activity criterion.\n\nAll five risk scoring components are supported by the supplied telemetry, leading to a maximal risk score of 100.\n\nThe classification of \"Brute Force Attempt\" is driven solely by the repeated authentication failures and the presence of a privileged target, even though the packet count relates to ICMP traffic. The alert does not confirm successful compromise; it only indicates suspicious activity warranting further investigation.\n\nGiven the lack of asset inventory, provenance confirmation, and broader context, confidence remains low.\n\nNo evidence was provided to confirm legitimate lab testing or retries; thus those possibilities remain plausible.\n\nThe alert lacks any indication that the traffic caused service disruption or network denial of service.\n\nAll conclusions are based directly on the supplied telemetry and remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics or retry attempts may generate ICMP traffic and authentication failures; confirming the activity as authorized or unintentional would reduce suspicion."
+      ],
+      "missing_evidence": [
+        "No evidence of source or destination ownership or explicit authorization status.\nNo logs or context confirming the intrusion attempt was genuinely malicious versus a permitted test.\nNo additional telemetry confirming if the traffic caused any impact on targeted services."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires prompt Tier 2 review; verify evidence and investigate potential compromise",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P2",
+          "action": "Review authentication logs for related failed logins, account lockout events, or related accounts",
+          "reason": "Corroborate repeated authentication failures and assess if broader brute force activity exists",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P2",
+          "action": "Examine network packet captures for sent vs received ICMP packets to assess whether the ICMP flood was symptomatic of a misconfigured appliance or intentional denial",
+          "reason": "Determine if ICMP traffic is a diagnostic probe or an attempted denial-of-service",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P3",
+          "action": "Validate asset ownership and test status for IP\u00a0192.0.2.10 and SSH service",
+          "reason": "Confirm or rule out authorized internal testing",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "The alert indicates a high\u2011risk burst of ICMP traffic and failed SSH login attempts to a privileged SSH service. While the activity is suspicious and warrants escalation to Tier\u00a02 for thorough investigation, it does not constitute confirmed compromise or denial of service."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Medium",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Observed facts: 101 ICMP packets within a 60\u2011second window, yielding 1.68 packets per second. Two distinct events (r1 and r2) were recorded 30 seconds apart, indicating repeated activity. The service_context indicates the target was an SSH management service marked as privileged, and the documented_flood_threshold shows a threshold of 1 packet per second, which was exceeded. Additionally, two authentication_events with failure outcomes were recorded for account \u2018lab\u2011user\u2019. Calculated metrics confirm the packet rate and volume thresholds used for scoring. Hypotheses: the combination of high packet volume, repeated events, privileged service targeting, flood\u2011like ICMP behavior, and authentication failures is consistent with a brute\u2011force attack directed at an SSH service. Unknowns remain regarding the legitimacy of the source IP 192.0.2.10, whether the traffic is part of authorized testing, or if there is a known baseline of normal ICMP traffic for this host. Therefore, the evidence supports a Brute Force Attempt classification with a risk score of 100, but the confidence is medium due to the lack of independent verification of source authenticity and authorization context.",
+      "false_positive_considerations": [
+        "The source IP is a reserved test address (192.0.2.10); internal scanning or laboratory testing could explain elevated ICMP traffic and repeated authentication attempts.",
+        "No explicit documentation of authorized vulnerability scanning or penetration testing activity accompanies the alert, leaving uncertainty about the legitimacy of the traffic.",
+        "High packet volume alone does not prove malicious intent; legitimate maintenance or backup operations could generate similar patterns."
+      ],
+      "missing_evidence": [
+        "Independent confirmation that the source IP is not a benign or internal test host.",
+        "Explicit evidence of authorization or policy exemption for the observed traffic.",
+        "Historical baseline metrics for normal ICMP traffic and authentication failures on the target service."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately for detailed investigation.",
+          "reason": "Risk score of 100 requires urgent Tier 2 review to confirm threat and authority.",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P2",
+          "action": "Review packet capture summaries and authentication logs for this IP and service period.",
+          "reason": "Detailed logs may reveal whether the traffic is part of scheduled scans or legitimate testing.",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P3",
+          "action": "Monitor for recurrence of ICMP bursts and authentication failures from 192.0.2.10.",
+          "reason": "Continued observation will help determine if the activity is anomalous or routine.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Alert shows elevated ICMP traffic with repeated authentication failures to a privileged SSH service, meeting criteria for a critical risk score. The source IP is a test address, and no explicit authorization has been confirmed, creating uncertainty about intent. Immediate Tier 2 investigation is advised to validate the threat and ensure operational context."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Deterministic calculations from supplied evidence. Conclusions remain subject to human verification.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "ok",
+      "validation_errors": [],
+      "alert_id": "SOC-TEST",
+      "alert_type": "Suspicious Network Volume",
+      "threat_classification": "Brute Force Attempt",
+      "risk_score": 100,
+      "risk_level": "Critical",
+      "confidence_level": "Low",
+      "normalized_evidence": {
+        "indicator_type": "ip",
+        "indicator_value": "192.0.2.10",
+        "source_host": null,
+        "destination_host": null,
+        "source_ip": null,
+        "destination_ip": null,
+        "protocol": "ICMP",
+        "packet_count": 101,
+        "time_window_seconds": 60,
+        "packets_per_second": 1.68
+      },
+      "risk_score_breakdown": [
+        {
+          "condition": "packet_volume",
+          "points": 40,
+          "supporting_evidence": "101 packets in 60 seconds"
+        },
+        {
+          "condition": "repeated_activity",
+          "points": 20,
+          "supporting_evidence": "Distinct events r1 and r2 are 30.0 seconds apart"
+        },
+        {
+          "condition": "privileged_service",
+          "points": 20,
+          "supporting_evidence": "synthetic-fixture-sensor: fixture-record; targeted SSH management"
+        },
+        {
+          "condition": "icmp_flood",
+          "points": 15,
+          "supporting_evidence": "Supplied ICMP telemetry supports flood-like behavior: documented flood threshold exceeded"
+        },
+        {
+          "condition": "authentication",
+          "points": 25,
+          "supporting_evidence": "Repeated authentication failures in supplied telemetry: auth1, auth2"
+        }
+      ],
+      "mitre_mapping": {
+        "tactic": "Credential Access",
+        "technique_id": "T1110",
+        "technique_name": "Brute Force"
+      },
+      "analysis_reasoning": "Observations: The alert reports 101 ICMP packets in a 60\u2011second window originating from indicator 192.0.2.10. Packet rate is 1.68 packets/s. Two distinct repeat events r1 and r2 occurred 30 seconds apart. Service context indicates the indicator targeted a privileged SSH management service. Two authentication failure events for account 'lab-user' were recorded for SSH authentication attempts. Calculated metrics: 101 packets give a \u2018packet_volume\u2019 score of +40; 30\u2011second interval between repeat events satisfies the \u2018repeated_activity\u2019 condition adding +20; privilege service targeting adds +20; documented ICMP flood threshold of 1 packet/s is exceeded, adding +15; authentication failures add +25. Total risk score 100, classed as \u2018Critical\u2019. Hypotheses: The volume spike combined with repeated authentication failures and privileged SSH access is consistent with a possible brute\u2011force attack (MITRE T1110). The ICMP traffic could be a side effect or a separate activity; the documented excess over the flood threshold suggests a flooding pattern. Unknowns: No source_ip is supplied, so it is impossible to confirm whether the originating traffic is indeed from 192.0.2.10. There is no evidence of a legitimate test or health\u2011check context, nor is there a known history of similar traffic. The authentication failures could be legitimate account lockouts or a scripted context. Conclusion: The available evidence supports a Brute Force Attempt classification but confidence remains low due to lack of context on source legitimacy and authentication intent.",
+      "false_positive_considerations": [
+        "Legitimate diagnostics, retries, or authorized testing are possible; verify supporting context."
+      ],
+      "missing_evidence": [
+        "Independently verify telemetry provenance, authorization, and asset context."
+      ],
+      "recommended_actions": [
+        {
+          "priority": "P1",
+          "action": "Escalate to Tier 2 immediately",
+          "reason": "Risk score 100 requires immediate tier 2 escalation; verify evidence.",
+          "requires_human_approval": true
+        },
+        {
+          "priority": "P2",
+          "action": "Collect detailed authentication logs for account 'lab-user' and verify legitimacy of failures",
+          "reason": "Authentication failures may indicate brute force; need confirmation of semantics.",
+          "requires_human_approval": true
+        }
+      ],
+      "escalation_required": true,
+      "escalation_reason": "Critical score requires immediate Tier 2 escalation; verify evidence.",
+      "human_review_required": true,
+      "executive_summary": "Supplied telemetry supports a triage score of 100. Human investigation is required; the score does not establish compromise."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    },
+    {
+      "status": "verification_failed",
+      "validation_errors": [
+        "Unsupported detector threshold claim: no detection_threshold was supplied; the playbook example is not telemetry"
+      ],
+      "alert_id": null,
+      "alert_type": null,
+      "threat_classification": null,
+      "risk_score": null,
+      "risk_level": null,
+      "confidence_level": null,
+      "normalized_evidence": null,
+      "risk_score_breakdown": [],
+      "mitre_mapping": {
+        "tactic": null,
+        "technique_id": null,
+        "technique_name": null
+      },
+      "analysis_reasoning": null,
+      "false_positive_considerations": [],
+      "missing_evidence": [],
+      "recommended_actions": [],
+      "escalation_required": false,
+      "escalation_reason": null,
+      "human_review_required": true,
+      "executive_summary": "Processing stopped. Human review is required."
+    }
+  ],
+  "event_types": [
+    "vertices_sorted",
+    "build_start",
+    "end_vertex",
+    "end_vertex",
+    "log",
+    "log",
+    "log",
+    "log",
+    "log",
+    "log",
+    "log",
+    "log",
+    "log",
+    "log",
+    "log",
+    "log",
+    "end_vertex",
+    "end_vertex",
+    "end_vertex",
+    "end"
+  ],
+  "event_file": "live-events-critical100_auth.json"
+}

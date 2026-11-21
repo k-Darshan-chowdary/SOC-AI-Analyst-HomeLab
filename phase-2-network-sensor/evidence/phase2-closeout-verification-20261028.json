@@ -1,0 +1,294 @@
+{
+  "ReviewDate": "2026-10-28",
+  "Status": "COMPLETE",
+  "Scope": "Phase 2 local sensor validation and archive closeout only",
+  "OriginalLiveTestDate": "2026-10-19",
+  "CompletedTestsRerun": false,
+  "APICallsMade": false,
+  "VMsModified": false,
+  "Phase1Modified": false,
+  "OldWazuhLabModified": false,
+  "Phase3Started": false,
+  "EAccessed": false,
+  "Screenshots": [
+    {
+      "File": "phase2-20261028-baseline-0-packets-0-alerts.png",
+      "Exists": true,
+      "Bytes": 447802,
+      "Width": 1536,
+      "Height": 864,
+      "VisuallyReviewed": true,
+      "AllRequiredContentReadable": true,
+      "PixelSHA256": "75D9BA642B99D3D99375C99012664D28548C07BD42E61EC3A0EA0DE5FE372BC4",
+      "MatchesOriginalCapturePixels": true,
+      "Format": "Original JPEG window capture losslessly re-encoded to PNG; no content edits"
+    },
+    {
+      "File": "phase2-20261028-boundary-40-packets-0-alerts.png",
+      "Exists": true,
+      "Bytes": 478601,
+      "Width": 1536,
+      "Height": 864,
+      "VisuallyReviewed": true,
+      "AllRequiredContentReadable": true,
+      "PixelSHA256": "24D0E258C239CC7019DB72214C5CDC6651F3E8E5C74E7E0FAE9470F8E5817E0F",
+      "MatchesOriginalCapturePixels": true,
+      "Format": "Original JPEG window capture losslessly re-encoded to PNG; no content edits"
+    },
+    {
+      "File": "phase2-20261028-detection-41-packets-1-alert.png",
+      "Exists": true,
+      "Bytes": 466951,
+      "Width": 1536,
+      "Height": 864,
+      "VisuallyReviewed": true,
+      "AllRequiredContentReadable": true,
+      "PixelSHA256": "16D775C895B1FEF780767B326314E45CB8CE6D026DC84D1B32A2E22F28F5782C",
+      "MatchesOriginalCapturePixels": true,
+      "Format": "Original JPEG window capture losslessly re-encoded to PNG; no content edits"
+    },
+    {
+      "File": "phase2-20261028-generated-json-alert-redacted.png",
+      "Exists": true,
+      "Bytes": 477986,
+      "Width": 1536,
+      "Height": 864,
+      "VisuallyReviewed": true,
+      "AllRequiredContentReadable": true,
+      "PixelSHA256": "0B83B7C079B506D724BC3BD0D3E4405C2AB2E5373E8806244D05F7EF705CE240",
+      "MatchesOriginalCapturePixels": true,
+      "Format": "Original JPEG window capture losslessly re-encoded to PNG; no content edits"
+    },
+    {
+      "File": "phase2-20261028-tshark-capture-logs.png",
+      "Exists": true,
+      "Bytes": 353959,
+      "Width": 1536,
+      "Height": 864,
+      "VisuallyReviewed": true,
+      "AllRequiredContentReadable": true,
+      "PixelSHA256": "051229C8618A13A6F2D3074DCEAF01290268CDA69431BD14CE3D6512DB15E7CF",
+      "MatchesOriginalCapturePixels": true,
+      "Format": "Original JPEG window capture losslessly re-encoded to PNG; no content edits"
+    },
+    {
+      "File": "phase2-20261028-sha256-evidence-manifest.png",
+      "Exists": true,
+      "Bytes": 865473,
+      "Width": 1536,
+      "Height": 864,
+      "VisuallyReviewed": true,
+      "AllRequiredContentReadable": true,
+      "PixelSHA256": "588FD47116A155B26F89D3B074D6980FE003154F7072486BC352C41A3C5D242D",
+      "MatchesOriginalCapturePixels": true,
+      "Format": "Original JPEG window capture losslessly re-encoded to PNG; no content edits"
+    }
+  ],
+  "OriginalEvidencePreserved": [
+    {
+      "File": "evidence\\offline-tests.txt",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\overview-contact-sheet.png",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\reference-sha256.json",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\sha256-manifest-20261019-174228.csv",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\above41-01\\capture-config.json",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\above41-01\\metadata.csv",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\above41-01\\SOC-27A96DCD741E49C39BCCCF03F0FAA436.json",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\above41-01\\summary.json",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\above41-01\\tshark.stderr.log",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\baseline-01\\capture-config.json",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\baseline-01\\metadata.csv",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\baseline-01\\summary.json",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\baseline-01\\tshark.stderr.log",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\boundary40-01\\capture-config.json",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\boundary40-01\\metadata.csv",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\boundary40-01\\summary.json",
+      "Unchanged": true
+    },
+    {
+      "File": "evidence\\guest-runs-20261019-172956\\boundary40-01\\tshark.stderr.log",
+      "Unchanged": true
+    }
+  ],
+  "OriginalEvidenceUnchangedCount": 17,
+  "OriginalRunManifestMatches": 13,
+  "OriginalRunManifestEntries": 13,
+  "VerifiedResults": [
+    {
+      "Run": "baseline-01",
+      "MetadataRows": 0,
+      "ObservedEchoRequests": 0,
+      "SummaryAlertCount": 0,
+      "AlertFiles": 0,
+      "ProcessElapsedSeconds": 60.86,
+      "CompletedAtUTC": "2026-10-19T22:07:31.546081+00:00"
+    },
+    {
+      "Run": "boundary40-01",
+      "MetadataRows": 40,
+      "ObservedEchoRequests": 40,
+      "SummaryAlertCount": 0,
+      "AlertFiles": 0,
+      "ProcessElapsedSeconds": 60.209,
+      "CompletedAtUTC": "2026-10-19T22:21:30.362642+00:00"
+    },
+    {
+      "Run": "above41-01",
+      "MetadataRows": 41,
+      "ObservedEchoRequests": 41,
+      "SummaryAlertCount": 1,
+      "AlertFiles": 1,
+      "ProcessElapsedSeconds": 60.225,
+      "CompletedAtUTC": "2026-10-19T22:25:21.667849+00:00"
+    }
+  ],
+  "PublicTextPrivacyReviewPassed": true,
+  "AlertHostnameRedactionVerified": true,
+  "ScreenshotMethod": "Genuine full-screen Chrome captures of read-only archived content; originals preserved. Not contemporaneous live-test terminal screenshots.",
+  "DocumentationLinks": [
+    {
+      "Document": "README.md",
+      "Target": "docs/phase-2-live-validation.md",
+      "Exists": true
+    },
+    {
+      "Document": "README.md",
+      "Target": "src/soc_capture.py",
+      "Exists": true
+    },
+    {
+      "Document": "README.md",
+      "Target": "tests/test_soc_capture.py",
+      "Exists": true
+    },
+    {
+      "Document": "README.md",
+      "Target": "docs/phase-2-live-validation.md",
+      "Exists": true
+    },
+    {
+      "Document": "README.md",
+      "Target": "evidence/phase2-archive-verification-20261028.json",
+      "Exists": true
+    },
+    {
+      "Document": "README.md",
+      "Target": "evidence/phase2-closeout-verification-20261028.json",
+      "Exists": true
+    },
+    {
+      "Document": "README.md",
+      "Target": "evidence/phase2-closeout-sha256-20261028.csv",
+      "Exists": true
+    },
+    {
+      "Document": "docs\\phase-2-live-validation.md",
+      "Target": "../src/soc_capture.py",
+      "Exists": true
+    },
+    {
+      "Document": "docs\\phase-2-live-validation.md",
+      "Target": "../tests/test_soc_capture.py",
+      "Exists": true
+    },
+    {
+      "Document": "docs\\phase-2-live-validation.md",
+      "Target": "../evidence/phase2-archive-verification-20261028.json",
+      "Exists": true
+    },
+    {
+      "Document": "docs\\phase-2-live-validation.md",
+      "Target": "../evidence/phase2-closeout-verification-20261028.json",
+      "Exists": true
+    },
+    {
+      "Document": "docs\\phase-2-live-validation.md",
+      "Target": "../evidence/phase2-closeout-sha256-20261028.csv",
+      "Exists": true
+    },
+    {
+      "Document": "docs\\phase-2-live-validation.md",
+      "Target": "../evidence/phase2-20261028-baseline-0-packets-0-alerts.png",
+      "Exists": true
+    },
+    {
+      "Document": "docs\\phase-2-live-validation.md",
+      "Target": "../evidence/phase2-20261028-boundary-40-packets-0-alerts.png",
+      "Exists": true
+    },
+    {
+      "Document": "docs\\phase-2-live-validation.md",
+      "Target": "../evidence/phase2-20261028-detection-41-packets-1-alert.png",
+      "Exists": true
+    },
+    {
+      "Document": "docs\\phase-2-live-validation.md",
+      "Target": "../evidence/phase2-20261028-generated-json-alert-redacted.png",
+      "Exists": true
+    },
+    {
+      "Document": "docs\\phase-2-live-validation.md",
+      "Target": "../evidence/phase2-20261028-tshark-capture-logs.png",
+      "Exists": true
+    },
+    {
+      "Document": "docs\\phase-2-live-validation.md",
+      "Target": "../evidence/phase2-20261028-sha256-evidence-manifest.png",
+      "Exists": true
+    }
+  ],
+  "Limitations": [
+    "No independent guest-to-host hash comparison",
+    "Capture loss completeness not established",
+    "No separate-VM network validation",
+    "No Langflow or NVIDIA integration validation",
+    "Historical setup/version/transfer transcripts not retained in run bundle",
+    "No original contemporaneous terminal screenshots",
+    "GitHub-ready local files only; no repository upload or push performed"
+  ],
+  "AllDocumentationLinksResolve": true
+}

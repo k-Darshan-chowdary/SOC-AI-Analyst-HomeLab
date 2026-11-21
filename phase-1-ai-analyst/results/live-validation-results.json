@@ -1,0 +1,148 @@
+{
+  "test63": {
+    "status": "ok",
+    "validation_errors": [],
+    "alert_id": "SOC-TEST-63",
+    "alert_type": "Suspicious Network Volume",
+    "threat_classification": "Suspicious Network Volume",
+    "risk_score": 30,
+    "risk_level": "Medium",
+    "confidence_level": "Low",
+    "normalized_evidence": {
+      "indicator_type": "ip",
+      "indicator_value": "192.0.2.10",
+      "source_host": null,
+      "destination_host": null,
+      "source_ip": "192.0.2.10",
+      "destination_ip": null,
+      "protocol": "ICMP",
+      "packet_count": 63,
+      "time_window_seconds": 60,
+      "packets_per_second": 1.05
+    },
+    "risk_score_breakdown": [
+      {
+        "condition": "packet_volume",
+        "points": 30,
+        "supporting_evidence": "63 packets"
+      },
+      {
+        "condition": "repeated_activity",
+        "points": 0,
+        "supporting_evidence": "Not established by supplied packet-only evidence"
+      },
+      {
+        "condition": "privileged_service",
+        "points": 0,
+        "supporting_evidence": "Not established by supplied packet-only evidence"
+      },
+      {
+        "condition": "icmp_flood",
+        "points": 0,
+        "supporting_evidence": "Not established by supplied packet-only evidence"
+      },
+      {
+        "condition": "authentication",
+        "points": 0,
+        "supporting_evidence": "Not established by supplied packet-only evidence"
+      }
+    ],
+    "mitre_mapping": {
+      "tactic": null,
+      "technique_id": null,
+      "technique_name": null
+    },
+    "analysis_reasoning": "Packet-only deterministic triage. A detector exceedance is not proof of an attack. Agent schema and numbers passed checks. Model narrative and recommendations are withheld as unverified pending human review.",
+    "false_positive_considerations": [
+      "Routine diagnostics are possible but unverified."
+    ],
+    "missing_evidence": [
+      "Authorization, baseline, service and authentication context"
+    ],
+    "recommended_actions": [
+      {
+        "priority": "P3",
+        "action": "Review supporting telemetry",
+        "reason": "Confirm context before accepting narrative findings.",
+        "requires_human_approval": true
+      }
+    ],
+    "escalation_required": false,
+    "escalation_reason": "No supplied evidence establishes an urgent incident.",
+    "human_review_required": true,
+    "executive_summary": "Packet evidence was validated and its rate calculated. Human review is required; malicious intent and impact are unverified."
+  },
+  "test48": {
+    "status": "ok",
+    "validation_errors": [],
+    "alert_id": "SOC-TEST-48",
+    "alert_type": "Suspicious Network Volume",
+    "threat_classification": "Unknown",
+    "risk_score": 20,
+    "risk_level": "Low",
+    "confidence_level": "Low",
+    "normalized_evidence": {
+      "indicator_type": "ip",
+      "indicator_value": "192.0.2.10",
+      "source_host": null,
+      "destination_host": null,
+      "source_ip": null,
+      "destination_ip": null,
+      "protocol": "ICMP",
+      "packet_count": 48,
+      "time_window_seconds": 120,
+      "packets_per_second": 0.4
+    },
+    "risk_score_breakdown": [
+      {
+        "condition": "packet_volume",
+        "points": 20,
+        "supporting_evidence": "48 packets"
+      },
+      {
+        "condition": "repeated_activity",
+        "points": 0,
+        "supporting_evidence": "Not established by supplied packet-only evidence"
+      },
+      {
+        "condition": "privileged_service",
+        "points": 0,
+        "supporting_evidence": "Not established by supplied packet-only evidence"
+      },
+      {
+        "condition": "icmp_flood",
+        "points": 0,
+        "supporting_evidence": "Not established by supplied packet-only evidence"
+      },
+      {
+        "condition": "authentication",
+        "points": 0,
+        "supporting_evidence": "Not established by supplied packet-only evidence"
+      }
+    ],
+    "mitre_mapping": {
+      "tactic": null,
+      "technique_id": null,
+      "technique_name": null
+    },
+    "analysis_reasoning": "Packet-only deterministic triage. A detector exceedance is not proof of an attack. Agent schema and numbers passed checks. Model narrative and recommendations are withheld as unverified pending human review.",
+    "false_positive_considerations": [
+      "Routine diagnostics are possible but unverified."
+    ],
+    "missing_evidence": [
+      "Authorization, baseline, service and authentication context"
+    ],
+    "recommended_actions": [
+      {
+        "priority": "P3",
+        "action": "Review supporting telemetry",
+        "reason": "Confirm context before accepting narrative findings.",
+        "requires_human_approval": true
+      }
+    ],
+    "escalation_required": false,
+    "escalation_reason": "No supplied evidence establishes an urgent incident.",
+    "human_review_required": true,
+    "executive_summary": "Packet evidence was validated and its rate calculated. Human review is required; malicious intent and impact are unverified."
+  }
+}

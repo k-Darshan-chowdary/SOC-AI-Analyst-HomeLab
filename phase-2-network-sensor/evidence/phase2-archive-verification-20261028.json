@@ -1,0 +1,120 @@
+{
+  "ReviewDate": "2026-10-28",
+  "Mode": "Read-only existing archive review; no completed tests rerun",
+  "Runs": [
+    {
+      "Run": "baseline-01",
+      "MetadataRows": 0,
+      "ObservedEchoRequests": 0,
+      "SummaryAlertCount": 0,
+      "AlertFiles": 0,
+      "ProcessElapsedSeconds": 60.86,
+      "CompletedAtUTC": "2026-10-19T22:07:31.546081+00:00"
+    },
+    {
+      "Run": "boundary40-01",
+      "MetadataRows": 40,
+      "ObservedEchoRequests": 40,
+      "SummaryAlertCount": 0,
+      "AlertFiles": 0,
+      "ProcessElapsedSeconds": 60.209,
+      "CompletedAtUTC": "2026-10-19T22:21:30.362642+00:00"
+    },
+    {
+      "Run": "above41-01",
+      "MetadataRows": 41,
+      "ObservedEchoRequests": 41,
+      "SummaryAlertCount": 1,
+      "AlertFiles": 1,
+      "ProcessElapsedSeconds": 60.225,
+      "CompletedAtUTC": "2026-10-19T22:25:21.667849+00:00"
+    }
+  ],
+  "OriginalManifestChecks": [
+    {
+      "File": "above41-01\\capture-config.json",
+      "ExpectedSHA256": "C3883318651468E710557C265865CD9D54F7074601CE19E8D2F56D0CD507D3AE",
+      "ActualSHA256": "C3883318651468E710557C265865CD9D54F7074601CE19E8D2F56D0CD507D3AE",
+      "Match": true
+    },
+    {
+      "File": "above41-01\\metadata.csv",
+      "ExpectedSHA256": "8288FC68B0677597C5ADD93DC725B8E744EDE9ACE31D1BE87D51C54B6C858B24",
+      "ActualSHA256": "8288FC68B0677597C5ADD93DC725B8E744EDE9ACE31D1BE87D51C54B6C858B24",
+      "Match": true
+    },
+    {
+      "File": "above41-01\\SOC-27A96DCD741E49C39BCCCF03F0FAA436.json",
+      "ExpectedSHA256": "28FBE0F5B60517D2C92022DDB78EF0CE8B429AB963BEC81321302A710D70B4D2",
+      "ActualSHA256": "28FBE0F5B60517D2C92022DDB78EF0CE8B429AB963BEC81321302A710D70B4D2",
+      "Match": true
+    },
+    {
+      "File": "above41-01\\summary.json",
+      "ExpectedSHA256": "457D4CFCD8AD40D05FF7445CCE4EA8EB2AB6F07382E1B607FE4B2EF57F0DBD79",
+      "ActualSHA256": "457D4CFCD8AD40D05FF7445CCE4EA8EB2AB6F07382E1B607FE4B2EF57F0DBD79",
+      "Match": true
+    },
+    {
+      "File": "above41-01\\tshark.stderr.log",
+      "ExpectedSHA256": "23D8A2357644EB6E9BB482C46CF9E45720643D23FB8C738098CC5F0E8D32A2CB",
+      "ActualSHA256": "23D8A2357644EB6E9BB482C46CF9E45720643D23FB8C738098CC5F0E8D32A2CB",
+      "Match": true
+    },
+    {
+      "File": "baseline-01\\capture-config.json",
+      "ExpectedSHA256": "FC7FDE9AB85C18C0CD9A7662DE1E2F1C6AFC18F01CC571A706C2471290EACE13",
+      "ActualSHA256": "FC7FDE9AB85C18C0CD9A7662DE1E2F1C6AFC18F01CC571A706C2471290EACE13",
+      "Match": true
+    },
+    {
+      "File": "baseline-01\\metadata.csv",
+      "ExpectedSHA256": "6CAB4077A84C1B645DDB1741B48D3FA91A86F81FC933A68E07023A753BAC2083",
+      "ActualSHA256": "6CAB4077A84C1B645DDB1741B48D3FA91A86F81FC933A68E07023A753BAC2083",
+      "Match": true
+    },
+    {
+      "File": "baseline-01\\summary.json",
+      "ExpectedSHA256": "4F0FE54932E437EF5F56D6197378F638F476144EAE5E92CA814E64874718474A",
+      "ActualSHA256": "4F0FE54932E437EF5F56D6197378F638F476144EAE5E92CA814E64874718474A",
+      "Match": true
+    },
+    {
+      "File": "baseline-01\\tshark.stderr.log",
+      "ExpectedSHA256": "EB9A8BC313C82132D6D2CFDC669C4433B4473A542C8ACAE4EE5327A010F9FAEC",
+      "ActualSHA256": "EB9A8BC313C82132D6D2CFDC669C4433B4473A542C8ACAE4EE5327A010F9FAEC",
+      "Match": true
+    },
+    {
+      "File": "boundary40-01\\capture-config.json",
+      "ExpectedSHA256": "5809589A384F64E0067F03EC46488DF0B68774A44724BE2FDC2F7CD3481045E0",
+      "ActualSHA256": "5809589A384F64E0067F03EC46488DF0B68774A44724BE2FDC2F7CD3481045E0",
+      "Match": true
+    },
+    {
+      "File": "boundary40-01\\metadata.csv",
+      "ExpectedSHA256": "9D381F7AE53B7D5CE0823D8187FEF941F78A603B485CFCA71B0B041FC9274A38",
+      "ActualSHA256": "9D381F7AE53B7D5CE0823D8187FEF941F78A603B485CFCA71B0B041FC9274A38",
+      "Match": true
+    },
+    {
+      "File": "boundary40-01\\summary.json",
+      "ExpectedSHA256": "FFCAAB686D0799514BFB9DEE04F297B0E3BD862B3B49AD6F8B1FF27F4EDF6436",
+      "ActualSHA256": "FFCAAB686D0799514BFB9DEE04F297B0E3BD862B3B49AD6F8B1FF27F4EDF6436",
+      "Match": true
+    },
+    {
+      "File": "boundary40-01\\tshark.stderr.log",
+      "ExpectedSHA256": "A53B85AE7C62DD547D02255EA52BCCE1F19674193E6C9373CCCD0E3E22CDC82C",
+      "ActualSHA256": "A53B85AE7C62DD547D02255EA52BCCE1F19674193E6C9373CCCD0E3E22CDC82C",
+      "Match": true
+    }
+  ],
+  "AlertFieldsVerified": true,
+  "Limitations": [
+    "No independent guest-to-host hash comparison",
+    "Capture loss completeness not established",
+    "No separate-VM network validation",
+    "No Langflow or NVIDIA integration validation"
+  ]
+}
